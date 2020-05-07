@@ -2,10 +2,6 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
-  require_relative 'config/environment'
-
-  class App < Sinatra::Base
-
     configure do
       enable :sessions
       set :session_secret, 'password'
@@ -22,4 +18,3 @@ class App < Sinatra::Base
     end
   end
 
-end
